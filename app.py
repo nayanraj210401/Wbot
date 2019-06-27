@@ -1,6 +1,6 @@
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
-from utils import fetch_reply
+# from utils import fetch_reply
 
 app = Flask(__name__)
 
@@ -28,8 +28,8 @@ def sms_reply():
     elif msg == 'whatsup':
         resp.message("This is Wbot ")
     else:
-        resp.message(reply)
-        # resp.message("you Said : {}".format(msg))
+        # resp.message(reply)
+         resp.message("you Said : {}".format(msg))
 
     #  resp.message("You said: {}".format(msg))
 
